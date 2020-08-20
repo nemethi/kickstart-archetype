@@ -10,6 +10,10 @@
       <defaultValue>application</defaultValue>
       <validationRegex>^[a-z0-9]+[a-z0-9-]*$</validationRegex>
     </requiredProperty>
+    <requiredProperty key="executableJar">
+      <defaultValue>yes</defaultValue>
+      <validationRegex>^yes|no|y|n$</validationRegex>
+    </requiredProperty>
   </requiredProperties>
   <fileSets>
     <fileSet packaged="true" filtered="true">
