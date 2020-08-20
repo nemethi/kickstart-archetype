@@ -1,0 +1,42 @@
+<archetype-descriptor xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+  name="kickstart" partial="false">
+  <requiredProperties>
+    <requiredProperty key="groupId">
+      <defaultValue>nemethi</defaultValue>
+      <validationRegex>^[a-z][a-z.]*$</validationRegex>
+    </requiredProperty>
+    <requiredProperty key="artifactId">
+      <defaultValue>application</defaultValue>
+      <validationRegex>^[a-z0-9]+[a-z0-9-]*$</validationRegex>
+    </requiredProperty>
+  </requiredProperties>
+  <fileSets>
+    <fileSet packaged="true" filtered="true">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/Application.java</include>
+      </includes>
+    </fileSet>
+    <fileSet packaged="true" filtered="true">
+      <directory>src/test/java</directory>
+      <includes>
+        <include>**/ApplicationTest.java</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>.mvn/wrapper</directory>
+      <includes>
+        <include>**/MavenWrapperDownloader.java</include>
+        <include>**/maven-wrapper.properties</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory></directory>
+      <includes>
+        <include>mvnw*</include>
+        <include>.gitignore</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
