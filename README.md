@@ -6,6 +6,8 @@ Apart from adding a sample Java file and test file it also includes:
 * a `.gitignore` file
 * a configured [Jacoco Plugin](https://www.eclemma.org/jacoco/trunk/doc/maven.html) for test coverage
 * my frequently used test dependencies
+* an optionally configured [Maven Jar Plugin](https://maven.apache.org/plugins/maven-jar-plugin/)
+for creating executable JARs
 * an optionally configured [Maven Assembly Plugin](https://maven.apache.org/plugins/maven-assembly-plugin/) 
 for creating executable JARs with all the necessary dependencies
 
@@ -20,7 +22,8 @@ To create a project from the archetype, run:
     -DarchetypeVersion=1.0
 
 You may specify `-DgroupId=<your-group-id>`, `-DartifactId=<your-artifact-id>` and `-Dversion=<your-version>` but you can edit the default values while generating the project.
-With the `-DexecutableJar=<yes|no>` property you may configure whether your project's JAR should include all necessary dependencies and be executable.
+With the `-DexecutableJar=<yes|no>` property you may configure whether your project's JAR should be executable.
+With the `-DfatJar=<yes|no>` property you may configure whether your project's JAR should include all necessary dependencies and be executable.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

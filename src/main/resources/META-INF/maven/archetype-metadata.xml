@@ -14,7 +14,11 @@
       <defaultValue>no</defaultValue>
       <validationRegex>^yes|no|y|n$</validationRegex>
     </requiredProperty>
-  </requiredProperties>
+    <requiredProperty key="fatJar">
+      <defaultValue>no</defaultValue>
+      <validationRegex>^yes|no|y|n$</validationRegex>
+    </requiredProperty>
+   </requiredProperties>
   <fileSets>
     <fileSet packaged="true" filtered="true">
       <directory>src/main/java</directory>
