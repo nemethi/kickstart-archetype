@@ -9,9 +9,16 @@
   <packaging>jar</packaging>
   <version>${version}</version>
 
+#set( $JAVA_8 = 8 )
+#set( $Integer = 0 )
+#if( $Integer.parseInt($javaVersion) > $JAVA_8 )
+#set( $jdkVersion = $javaVersion )
+#else
+#set( $jdkVersion = "1.$javaVersion" )
+#end
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>$jdkVersion</maven.compiler.source>
+    <maven.compiler.target>$jdkVersion</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 

@@ -25,6 +25,8 @@ You may specify `-DgroupId=<your-group-id>`, `-DartifactId=<your-artifact-id>` a
 With the `-DexecutableJar=<yes|no>` property you may configure whether your project's JAR should be executable.
 With the `-DfatJar=<yes|no>` property you may configure whether your project's JAR should include all necessary dependencies and be executable.
 
+The generated project's Java version is set to 11 by default. You can change this with the `-DjavaVersion=<version>` property.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
