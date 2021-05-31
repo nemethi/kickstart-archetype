@@ -26,6 +26,7 @@ With the `-DexecutableJar=<yes|no>` property you may configure whether your proj
 With the `-DfatJar=<yes|no>` property you may configure whether your project's JAR should include all necessary dependencies and be executable.
 
 The generated project's Java version is set to 11 by default. You can change this with the `-DjavaVersion=<version>` property.
+The generated project will use JUnit 5 if the version is set to 9 or higher.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

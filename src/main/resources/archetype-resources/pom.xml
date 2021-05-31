@@ -9,9 +9,9 @@
   <packaging>jar</packaging>
   <version>${version}</version>
 
-#set( $JAVA_8 = 8 )
 #set( $Integer = 0 )
-#if( $Integer.parseInt($javaVersion) > $JAVA_8 )
+#set( $versionIsGreaterThan8 = $Integer.parseInt($javaVersion) > 8 )
+#if( $versionIsGreaterThan8 )
 #set( $jdkVersion = $javaVersion )
 #else
 #set( $jdkVersion = "1.$javaVersion" )
@@ -24,9 +24,15 @@
 
   <dependencies>
     <dependency>
+#if( $versionIsGreaterThan8 )
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.7.2</version>
+#else
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.2</version>
+#end
       <scope>test</scope>
     </dependency>
     <dependency>
