@@ -4,7 +4,7 @@
 
   <groupId>nemethi</groupId>
   <artifactId>kickstart</artifactId>
-  <version>3.0</version>
+  <version>3.0.1</version>
   <packaging>maven-archetype</packaging>
 
   <properties>
