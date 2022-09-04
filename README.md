@@ -19,7 +19,7 @@ To create a project from the archetype, run:
     mvn archetype:generate \
     -DarchetypeGroupId=nemethi \
     -DarchetypeArtifactId=kickstart \
-    -DarchetypeVersion=3.0.1
+    -DarchetypeVersion=3.0.2
 
 You may specify `-DgroupId=<your-group-id>`, `-DartifactId=<your-artifact-id>` and `-Dversion=<your-version>` but you can edit the default values while generating the project.
 With the `-DexecutableJar=<yes|no>` property you may configure whether your project's JAR should be executable.
